@@ -12,10 +12,6 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{url('/dashboard')}}">Dashboard</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('about.page')}}">About</a>
-                </li>
-
             </ul>
             <form class="d-flex">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
