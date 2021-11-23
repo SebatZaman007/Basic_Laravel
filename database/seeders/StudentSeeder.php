@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Sebat;
+use Database\Factories\StudentFactory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -16,11 +18,6 @@ class StudentSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('flights_students')->insert([
-            'name' => 'admin',
-            'email' => 'admin@gmail.com',
-            'phone' => '1234567890',
-            'address' => 'khulna,bangladesh'
-        ]);
+        StudentFactory::factory()->count(10)->create();
     }
 }
