@@ -16,7 +16,7 @@ class StudentSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('sebat')->insert([
+        DB::table('flights_students')->insert([
             'name' => 'admin',
             'email' => 'admin@gmail.com',
             'phone' => '1234567890',
