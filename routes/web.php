@@ -23,4 +23,4 @@ Route::get('/', function () {
 // });
 
 Route::get('/dashboard', [FirstController::class, 'dashboard']);
-Route::get('/aboyt',[FirstController::class,'ABoutMethoe'])->name('about.page');
+Route::get('/aboyt', [FirstController::class, 'ABoutMethoe'])->name('about.page');
